@@ -61,6 +61,8 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        print_r(Yii::$app->security->generateRandomString());
+        exit;
         return $this->render('index');
     }
 
